@@ -75,6 +75,10 @@ model_nat <- lm(data=all_city, WTP_Naturalness ~  sport_leisure_mean + all_green
                   Naturalness_mean)
 stargazer(model_nat, type ="latex", out ="Tables/regression_nat.tex")
 
+# Test log specification of naturalness values #
+model_nat_log <- lm(data=all_city, log(WTP_Naturalness) ~  sport_leisure_mean + all_green_mean + Income_mean + water_share_mean +
+                  Naturalness_mean)
+
 #### Robustness check linear regression ####
 #QQ Plot for appendix 
 png("Figures/qqplot.png", width = 7, height = 5, units = "in", res=300)
