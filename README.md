@@ -1,6 +1,6 @@
 # The Value of Urban Green Space: Analysing a Discrete Choice Experiment in the Largest German Cities
 
-In this folder you find all material except for the data that was used to produce the paper "The Value of Urban Green Space: Analysing a Discrete Choice Experiment in the Largest German Cities".
+In this repository you find all material except for the data that was used to produce the paper "The Value of Urban Green Space: Analysing a Discrete Choice Experiment in the Largest German Cities".
 
 For a full replication the survey data is needed, if you want to replicate the analysis write me an email to: nino.cavallaro@idiv.de. 
 I can then provide you with the data in an anonyimised form. 
