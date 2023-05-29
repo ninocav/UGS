@@ -1,0 +1,306 @@
+Model run by idivnc71qaxa using Apollo 0.2.8 on R 4.2.2 for Linux.
+www.ApolloChoiceModelling.com
+
+Model name                                  : MXL_full_log_Frankfurt
+Model description                           : WTP_full_log_rent Frankfurt
+Model run at                                : 2023-04-26 08:27:20
+Estimation method                           : bfgs
+Model diagnosis                             : successful convergence 
+Number of individuals                       : 369
+Number of rows in database                  : 3681
+Number of modelled outcomes                 : 3681
+
+Number of cores used                        :  31 
+Number of inter-individual draws            : 2000 (sobol)
+
+LL(start)                                   : -2606.69
+LL at equal shares, LL(0)                   : -4043.99
+LL at observed shares, LL(C)                : -3334.3
+LL(final)                                   : -2333.03
+Rho-squared vs equal shares                  :  0.4231 
+Adj.Rho-squared vs equal shares              :  0.4206 
+Rho-squared vs observed shares               :  0.3003 
+Adj.Rho-squared vs observed shares           :  0.2973 
+AIC                                         :  4686.06 
+BIC                                         :  4748.16 
+
+Estimated parameters                        :  10
+Time taken (hh:mm:ss)                       :  00:06:49.19 
+     pre-estimation                         :  00:03:11.85 
+     estimation                             :  00:02:5.32 
+     post-estimation                        :  00:01:32.01 
+Iterations                                  :  62  
+Min abs eigenvalue of Hessian               :  0.033249 
+
+Unconstrained optimisation.
+
+These outputs have had the scaling used in estimation applied to them.
+Estimates:
+               Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+mu_asc1       -0.020015    0.003060      -6.541    0.003700        -5.409
+mu_asc2       -0.024881    0.003221      -7.726    0.003833        -6.491
+mu_natural     0.023690    0.002319      10.218    0.003109         7.619
+mu_walking    -0.002953  3.0577e-04      -9.658  3.5881e-04        -8.230
+mu_rent      -52.241985    4.620076     -11.308    5.563834        -9.390
+sig_asc1       0.022110    0.003116       7.096    0.003481         6.351
+sig_asc2       0.024437    0.003801       6.430    0.005664         4.314
+sig_natural    0.018650    0.002075       8.987    0.003143         5.934
+sig_walking    0.001601  2.4506e-04       6.535  2.5447e-04         6.293
+sig_rent      31.801589    3.214995       9.892    3.545370         8.970
+
+
+Overview of choices for MNL model component :
+                                    alt1   alt2    alt3
+Times available                  3681.00 3681.0 3681.00
+Times chosen                      632.00  703.0 2346.00
+Percentage chosen overall          17.17   19.1   63.73
+Percentage chosen when available   17.17   19.1   63.73
+
+
+Classical covariance matrix:
+                mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent    sig_asc1    sig_asc2 sig_natural sig_walking
+mu_asc1       9.363e-06   4.911e-06  -3.284e-06   1.620e-07   -0.007293  -4.472e-06  -2.083e-06  -2.102e-06  -1.242e-07
+mu_asc2       4.911e-06   1.037e-05  -3.630e-06   2.709e-07   -0.008070  -2.537e-06  -4.719e-06  -2.053e-06  -1.363e-07
+mu_natural   -3.284e-06  -3.630e-06   5.376e-06  -4.068e-07    0.006249   2.111e-06   1.584e-06   2.608e-06   2.501e-07
+mu_walking    1.620e-07   2.709e-07  -4.068e-07   9.349e-08 -6.3884e-04  -2.361e-07  -2.859e-07  -2.164e-07  -4.764e-08
+mu_rent       -0.007293   -0.008070    0.006249 -6.3884e-04   21.345100    0.004257    0.004454    0.003350  3.1213e-04
+sig_asc1     -4.472e-06  -2.537e-06   2.111e-06  -2.361e-07    0.004257   9.710e-06   3.963e-06   1.019e-06   9.004e-08
+sig_asc2     -2.083e-06  -4.719e-06   1.584e-06  -2.859e-07    0.004454   3.963e-06   1.444e-05   1.475e-06   8.559e-08
+sig_natural  -2.102e-06  -2.053e-06   2.608e-06  -2.164e-07    0.003350   1.019e-06   1.475e-06   4.307e-06   9.954e-08
+sig_walking  -1.242e-07  -1.363e-07   2.501e-07  -4.764e-08  3.1213e-04   9.004e-08   8.559e-08   9.954e-08   6.005e-08
+sig_rent       0.004552    0.004860   -0.003833  3.9618e-04  -13.128544   -0.002874   -0.003311   -0.001970 -2.0759e-04
+               sig_rent
+mu_asc1        0.004552
+mu_asc2        0.004860
+mu_natural    -0.003833
+mu_walking   3.9618e-04
+mu_rent      -13.128544
+sig_asc1      -0.002874
+sig_asc2      -0.003311
+sig_natural   -0.001970
+sig_walking -2.0759e-04
+sig_rent      10.336192
+
+Robust covariance matrix:
+                mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent    sig_asc1    sig_asc2 sig_natural sig_walking
+mu_asc1       1.369e-05   1.087e-05  -6.350e-06   3.364e-07   -0.011363  -6.081e-06  -6.594e-06  -5.459e-06  -1.885e-07
+mu_asc2       1.087e-05   1.469e-05  -6.370e-06   5.227e-07   -0.012069  -6.173e-06  -9.961e-06  -3.918e-06  -1.985e-07
+mu_natural   -6.350e-06  -6.370e-06   9.667e-06  -7.474e-07    0.012206   3.277e-06   3.354e-06   6.409e-06   4.352e-07
+mu_walking    3.364e-07   5.227e-07  -7.474e-07   1.287e-07   -0.001110  -5.222e-07  -5.297e-07  -4.036e-07  -6.016e-08
+mu_rent       -0.011363   -0.012069    0.012206   -0.001110   30.956253    0.007843    0.011018    0.007591  5.5075e-04
+sig_asc1     -6.081e-06  -6.173e-06   3.277e-06  -5.222e-07    0.007843   1.212e-05   1.262e-05   2.045e-06   1.299e-07
+sig_asc2     -6.594e-06  -9.961e-06   3.354e-06  -5.297e-07    0.011018   1.262e-05   3.208e-05   5.285e-06  -1.418e-08
+sig_natural  -5.459e-06  -3.918e-06   6.409e-06  -4.036e-07    0.007591   2.045e-06   5.285e-06   9.879e-06   1.689e-07
+sig_walking  -1.885e-07  -1.985e-07   4.352e-07  -6.016e-08  5.5075e-04   1.299e-07  -1.418e-08   1.689e-07   6.476e-08
+sig_rent       0.006829    0.006844   -0.007638  7.1826e-04  -19.032710   -0.004972   -0.006823   -0.004564 -3.5906e-04
+               sig_rent
+mu_asc1        0.006829
+mu_asc2        0.006844
+mu_natural    -0.007638
+mu_walking   7.1826e-04
+mu_rent      -19.032710
+sig_asc1      -0.004972
+sig_asc2      -0.006823
+sig_natural   -0.004564
+sig_walking -3.5906e-04
+sig_rent      12.569649
+
+Classical correlation matrix:
+                mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent    sig_asc1    sig_asc2 sig_natural sig_walking
+mu_asc1          1.0000      0.4984     -0.4629      0.1731     -0.5159     -0.4690    -0.17915     -0.3310    -0.16570
+mu_asc2          0.4984      1.0000     -0.4862      0.2751     -0.5424     -0.2528    -0.38552     -0.3071    -0.17273
+mu_natural      -0.4629     -0.4862      1.0000     -0.5738      0.5833      0.2922     0.17974      0.5420     0.44026
+mu_walking       0.1731      0.2751     -0.5738      1.0000     -0.4522     -0.2478    -0.24605     -0.3410    -0.63578
+mu_rent         -0.5159     -0.5424      0.5833     -0.4522      1.0000      0.2957     0.25368      0.3493     0.27569
+sig_asc1        -0.4690     -0.2528      0.2922     -0.2478      0.2957      1.0000     0.33460      0.1576     0.11791
+sig_asc2        -0.1792     -0.3855      0.1797     -0.2461      0.2537      0.3346     1.00000      0.1870     0.09190
+sig_natural     -0.3310     -0.3071      0.5420     -0.3410      0.3493      0.1576     0.18705      1.0000     0.19573
+sig_walking     -0.1657     -0.1727      0.4403     -0.6358      0.2757      0.1179     0.09190      0.1957     1.00000
+sig_rent         0.4628      0.4694     -0.5142      0.4030     -0.8839     -0.2869    -0.27099     -0.2953    -0.26349
+               sig_rent
+mu_asc1          0.4628
+mu_asc2          0.4694
+mu_natural      -0.5142
+mu_walking       0.4030
+mu_rent         -0.8839
+sig_asc1        -0.2869
+sig_asc2        -0.2710
+sig_natural     -0.2953
+sig_walking     -0.2635
+sig_rent         1.0000
+
+Robust correlation matrix:
+                mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent    sig_asc1    sig_asc2 sig_natural sig_walking
+mu_asc1          1.0000      0.7663     -0.5519      0.2534     -0.5519     -0.4721   -0.314630     -0.4694   -0.200130
+mu_asc2          0.7663      1.0000     -0.5345      0.3800     -0.5659     -0.4626   -0.458793     -0.3252   -0.203525
+mu_natural      -0.5519     -0.5345      1.0000     -0.6699      0.7056      0.3028    0.190463      0.6558    0.550015
+mu_walking       0.2534      0.3800     -0.6699      1.0000     -0.5558     -0.4181   -0.260643     -0.3579   -0.658882
+mu_rent         -0.5519     -0.5659      0.7056     -0.5558      1.0000      0.4049    0.349618      0.4341    0.388990
+sig_asc1        -0.4721     -0.4626      0.3028     -0.4181      0.4049      1.0000    0.640106      0.1869    0.146623
+sig_asc2        -0.3146     -0.4588      0.1905     -0.2606      0.3496      0.6401    1.000000      0.2969   -0.009838
+sig_natural     -0.4694     -0.3252      0.6558     -0.3579      0.4341      0.1869    0.296851      1.0000    0.211105
+sig_walking     -0.2001     -0.2035      0.5500     -0.6589      0.3890      0.1466   -0.009838      0.2111    1.000000
+sig_rent         0.5206      0.5036     -0.6929      0.5646     -0.9649     -0.4028   -0.339798     -0.4096   -0.397985
+               sig_rent
+mu_asc1          0.5206
+mu_asc2          0.5036
+mu_natural      -0.6929
+mu_walking       0.5646
+mu_rent         -0.9649
+sig_asc1        -0.4028
+sig_asc2        -0.3398
+sig_natural     -0.4096
+sig_walking     -0.3980
+sig_rent         1.0000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+     ID Avg prob per choice
+ 468900           0.2309202
+ 275600           0.2366725
+   1657           0.2434223
+  14899           0.2442671
+ 166900           0.2475648
+  14210           0.2481786
+ 184400           0.2493376
+  13697           0.2522452
+  18677           0.2524121
+ 143200           0.2531233
+  11602           0.2537331
+ 260000           0.2542777
+  14126           0.2561872
+  10922           0.2563600
+    259           0.2563844
+  10129           0.2564966
+   3124           0.2579340
+ 220800           0.2580149
+  17021           0.2590378
+  12788           0.2603756
+
+Changes in parameter estimates from starting values:
+                Initial    Estimate  Difference
+mu_asc1       -0.050000   -0.020015    0.029985
+mu_asc2       -0.050000   -0.024881    0.025119
+mu_natural     0.025000    0.023690   -0.001310
+mu_walking  -4.0000e-04   -0.002953   -0.002553
+mu_rent      -20.000000  -52.241985  -32.241985
+sig_asc1       0.010000    0.022110    0.012110
+sig_asc2       0.010000    0.024437    0.014437
+sig_natural    0.020000    0.018650   -0.001350
+sig_walking    0.001000    0.001601  6.0134e-04
+sig_rent       5.000000   31.801589   26.801589
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                             
+modelName              "MXL_full_log_Frankfurt"          
+modelDescr             "WTP_full_log_rent Frankfurt"     
+indivID                "id"                              
+mixing                 "TRUE"                            
+HB                     "FALSE"                           
+nCores                 "31"                              
+outputDirectory        "Estimation_results/MXL_log_rent/"
+debug                  "FALSE"                           
+workInLogs             "FALSE"                           
+seed                   "13"                              
+noValidation           "FALSE"                           
+noDiagnostics          "FALSE"                           
+calculateLLC           "TRUE"                            
+panelData              "TRUE"                            
+analyticGrad           "TRUE"                            
+analyticGrad_manualSet "FALSE"                           
+
+Hessian routines attempted
+--------------
+numerical jacobian of LL analytical gradient
+
+Scaling in estimation
+--------------
+                   Value
+mu_asc1      0.020246626
+mu_asc2      0.025112179
+mu_natural   0.023909312
+mu_walking   0.002975999
+mu_rent     51.569864224
+sig_asc1     0.022257025
+sig_asc2     0.024645133
+sig_natural  0.018748669
+sig_walking  0.001614874
+sig_rent    31.199495927
+
+Scaling used in computing Hessian
+--------------
+                   Value
+mu_asc1      0.020015487
+mu_asc2      0.024880986
+mu_natural   0.023690428
+mu_walking   0.002953149
+mu_rent     52.241985182
+sig_asc1     0.022110450
+sig_asc2     0.024436878
+sig_natural  0.018649964
+sig_walking  0.001601345
+sig_rent    31.801588888
+
+
+apollo_randCoeff
+----------------
+function(apollo_beta, apollo_inputs){
+    randcoeff = list()
+    
+    randcoeff[["b_mu_asc1"]] = mu_asc1 + sig_asc1 * draws_asc1
+    randcoeff[["b_mu_asc2"]] = mu_asc2 + sig_asc2 * draws_asc2
+    randcoeff[["b_mu_natural"]] = mu_natural + sig_natural * draws_natural
+    randcoeff[["b_mu_walking"]] = mu_walking + sig_walking * draws_walking
+    randcoeff[["b_mu_rent"]] = mu_rent + sig_rent * draws_rent
+    
+    return(randcoeff)
+  }
+<bytecode: 0x564bb70175b8>
+
+
+apollo_probabilities
+--------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+    
+    ### Function initialisation: do not change the following three commands
+    ### Attach inputs and detach after function exit
+    apollo_attach(apollo_beta, apollo_inputs)
+    on.exit(apollo_detach(apollo_beta, apollo_inputs))
+    
+    ### Create list of probabilities P
+    P = list()
+    
+    ### List of utilities (later integrated in mnl_settings below) as defined in the equation in the paper
+    V = list()
+    V[['alt1']] = -(b_mu_rent)* (b_mu_asc1 + b_mu_natural * Naturnähe_1 + b_mu_walking * Erreichbarkeit_1 - log(Miete_1))
+    
+    V[['alt2']] = -(b_mu_rent)* (b_mu_asc2 + b_mu_natural * Naturnähe_2 + b_mu_walking * Erreichbarkeit_2 - log(Miete_2))
+    
+    V[['alt3']] = -(b_mu_rent)* (b_mu_natural * Naturnähe_3 + b_mu_walking * Erreichbarkeit_3 - log(Miete_3))
+    
+    
+    ### Define settings for MNL model component
+    mnl_settings = list(
+      alternatives  = c(alt1=1, alt2=2, alt3=3),
+      avail         = 1, # all alternatives are available in every choice
+      choiceVar     = choice,
+      V             = V#,  # tell function to use list vector defined above
+      
+    )
+    
+    ### Compute probabilities using MNL model
+    P[['model']] = apollo_mnl(mnl_settings, functionality)
+    
+    ### Take product across observation for same individual
+    P = apollo_panelProd(P, apollo_inputs, functionality)
+    
+    ### Average across inter-individual draws - nur bei Mixed Logit!
+    P = apollo_avgInterDraws(P, apollo_inputs, functionality)
+    
+    ### Prepare and return outputs of function
+    P = apollo_prepareProb(P, apollo_inputs, functionality)
+    return(P)
+  }
+<bytecode: 0x564be829c7c0>

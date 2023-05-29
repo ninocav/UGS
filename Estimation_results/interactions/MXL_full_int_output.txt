@@ -1,0 +1,474 @@
+Model run by idivnc71qaxa using Apollo 0.2.8 on R 4.2.2 for Linux.
+www.ApolloChoiceModelling.com
+
+Model name                                  : MXL_full_int
+Model description                           : MXL_full_int
+Model run at                                : 2023-05-16 12:27:07
+Estimation method                           : bfgs
+Model diagnosis                             : successful convergence 
+Number of individuals                       : 6168
+Number of rows in database                  : 61510
+Number of modelled outcomes                 : 61510
+
+Number of cores used                        :  31 
+Number of inter-individual draws            : 1000 (sobol)
+
+LL(start)                                   : -39713.49
+LL at equal shares, LL(0)                   : -67575.64
+LL at observed shares, LL(C)                : -54757.59
+LL(final)                                   : -37208.91
+Rho-squared vs equal shares                  :  0.4494 
+Adj.Rho-squared vs equal shares              :  0.4491 
+Rho-squared vs observed shares               :  0.3205 
+Adj.Rho-squared vs observed shares           :  0.3202 
+AIC                                         :  74451.82 
+BIC                                         :  74605.28 
+
+Estimated parameters                        :  17
+Time taken (hh:mm:ss)                       :  02:28:49.89 
+     pre-estimation                         :  00:18:20.27 
+     estimation                             :  01:00:16.82 
+     post-estimation                        :  01:10:12.8 
+Iterations                                  :  41  
+Min abs eigenvalue of Hessian               :  0.90851 
+
+Unconstrained optimisation.
+
+These outputs have had the scaling used in estimation applied to them.
+Estimates:
+                    Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+mu_asc1           -17.016731     0.72415    -23.4988     1.03622      -16.4219
+mu_asc2           -17.877325     0.61066    -29.2752     0.74189      -24.0970
+mu_natural         21.394100     0.60154     35.5657     0.72561       29.4842
+mu_walking         -2.626628     0.03427    -76.6457     0.03034      -86.5694
+mu_rent            -2.755817     0.02872    -95.9577     0.03250      -84.7886
+sig_asc1           20.467800     0.59446     34.4307     0.75095       27.2558
+sig_asc2           21.882888     0.64479     33.9379     1.15575       18.9339
+sig_natural        16.037020     0.35287     45.4478     0.51695       31.0227
+sig_walking         1.659526     0.02391     69.4075     0.02519       65.8837
+sig_rent            1.285662     0.03215     39.9845     0.04104       31.3242
+mu_nat_income     6.7945e-04  2.2954e-04      2.9601  4.2693e-04        1.5915
+mu_nat_age         -0.014202     0.01994     -0.7121     0.02229       -0.6372
+mu_nat_education    1.615141     0.60627      2.6641     0.94827        1.7032
+mu_nat_flatsize     0.007939     0.01594      0.4979     0.02829        0.2806
+mu_nat_garden      -0.922048     0.72539     -1.2711     1.40272       -0.6573
+mu_nat_gender       2.880150     0.55237      5.2142     0.99284        2.9009
+mu_nat_children    -4.387687     0.64816     -6.7694     0.84479       -5.1938
+
+
+Overview of choices for MNL model component :
+                                     alt1    alt2     alt3
+Times available                  61510.00 61510.0 61510.00
+Times chosen                     10183.00 11379.0 39948.00
+Percentage chosen overall           16.56    18.5    64.95
+Percentage chosen when available    16.56    18.5    64.95
+
+
+Classical covariance matrix:
+                          mu_asc1          mu_asc2       mu_natural       mu_walking          mu_rent         sig_asc1
+mu_asc1                  0.524400         0.221924        -0.129112         0.002060         0.009166        -0.252702
+mu_asc2                  0.221924         0.372912        -0.117436         0.001988         0.007278        -0.086578
+mu_natural              -0.129112        -0.117436         0.361846        -0.005755        -0.004300         0.052415
+mu_walking               0.002060         0.001988        -0.005755         0.001174       1.7168e-04        -0.004016
+mu_rent                  0.009166         0.007278        -0.004300       1.7168e-04       8.2479e-04        -0.004117
+sig_asc1                -0.252702        -0.086578         0.052415        -0.004016        -0.004117         0.353387
+sig_asc2                -0.091951        -0.175416         0.109109        -0.002592        -0.003165         0.097182
+sig_natural             -0.086608        -0.066344         0.103170        -0.002879        -0.002620         0.034975
+sig_walking             -0.002297        -0.002514         0.002263      -5.4314e-04      -1.0648e-04         0.001549
+sig_rent                 0.004231         0.002458      -1.9498e-04       -3.001e-05       4.2277e-04        -0.002694
+mu_nat_income           8.993e-06        2.407e-06        4.836e-05       -5.923e-07        3.821e-07       -5.910e-06
+mu_nat_age              -0.002424      -4.3716e-04        -0.001707        2.731e-05       -5.144e-05         0.001572
+mu_nat_education         0.036663         0.003153        -0.167306         0.002701       5.8607e-04        -0.041161
+mu_nat_flatsize        9.6308e-04       3.5005e-04        -0.001094        5.863e-05        1.186e-06      -8.7699e-04
+mu_nat_garden           -0.005037        -0.017140        -0.214289         0.002499        -0.001369         0.005529
+mu_nat_gender            0.014851         0.006202         0.021845        -0.003040         0.001121         0.011153
+mu_nat_children         -0.041217         0.005535        -0.042744        -0.001412      -4.5267e-04         0.022712
+                         sig_asc2      sig_natural      sig_walking         sig_rent    mu_nat_income       mu_nat_age
+mu_asc1                 -0.091951        -0.086608        -0.002297         0.004231        8.993e-06        -0.002424
+mu_asc2                 -0.175416        -0.066344        -0.002514         0.002458        2.407e-06      -4.3716e-04
+mu_natural               0.109109         0.103170         0.002263      -1.9498e-04        4.836e-05        -0.001707
+mu_walking              -0.002592        -0.002879      -5.4314e-04       -3.001e-05       -5.923e-07        2.731e-05
+mu_rent                 -0.003165        -0.002620      -1.0648e-04       4.2277e-04        3.821e-07       -5.144e-05
+sig_asc1                 0.097182         0.034975         0.001549        -0.002694       -5.910e-06         0.001572
+sig_asc2                 0.415757         0.084391         0.001481        -0.002495        2.112e-05       2.6846e-04
+sig_natural              0.084391         0.124515         0.002539      -7.6583e-04        2.021e-05      -8.6106e-04
+sig_walking              0.001481         0.002539       5.7168e-04       -1.186e-05        1.350e-07       -3.483e-05
+sig_rent                -0.002495      -7.6583e-04       -1.186e-05         0.001034        3.901e-07       -7.385e-05
+mu_nat_income           2.112e-05        2.021e-05        1.350e-07        3.901e-07        5.269e-08       -6.042e-07
+mu_nat_age             2.6846e-04      -8.6106e-04       -3.483e-05       -7.385e-05       -6.042e-07       3.9775e-04
+mu_nat_education        -0.045461        -0.025266         0.002189      -2.6322e-04       -4.147e-05         0.001629
+mu_nat_flatsize         -0.001456        -0.001566        1.752e-05       -1.098e-05       -2.559e-06       -2.797e-06
+mu_nat_garden           -0.049834        -0.044784      -2.6620e-04        -0.002113      -1.3002e-04         0.001699
+mu_nat_gender            0.037484         0.029245      -4.7855e-04         0.001858        6.919e-05      -2.4055e-04
+mu_nat_children         -0.028951      -7.3615e-04      -8.3207e-04      -1.5525e-04        3.004e-05         0.002978
+                 mu_nat_education  mu_nat_flatsize    mu_nat_garden    mu_nat_gender  mu_nat_children
+mu_asc1                  0.036663       9.6308e-04        -0.005037         0.014851        -0.041217
+mu_asc2                  0.003153       3.5005e-04        -0.017140         0.006202         0.005535
+mu_natural              -0.167306        -0.001094        -0.214289         0.021845        -0.042744
+mu_walking               0.002701        5.863e-05         0.002499        -0.003040        -0.001412
+mu_rent                5.8607e-04        1.186e-06        -0.001369         0.001121      -4.5267e-04
+sig_asc1                -0.041161      -8.7699e-04         0.005529         0.011153         0.022712
+sig_asc2                -0.045461        -0.001456        -0.049834         0.037484        -0.028951
+sig_natural             -0.025266        -0.001566        -0.044784         0.029245      -7.3615e-04
+sig_walking              0.002189        1.752e-05      -2.6620e-04      -4.7855e-04      -8.3207e-04
+sig_rent              -2.6322e-04       -1.098e-05        -0.002113         0.001858      -1.5525e-04
+mu_nat_income          -4.147e-05       -2.559e-06      -1.3002e-04        6.919e-05        3.004e-05
+mu_nat_age               0.001629       -2.797e-06         0.001699      -2.4055e-04         0.002978
+mu_nat_education         0.367559         0.004287         0.154620        -0.128177        -0.146323
+mu_nat_flatsize          0.004287       2.5421e-04         0.005916        -0.005405        -0.004672
+mu_nat_garden            0.154620         0.005916         0.526187        -0.270421        -0.100477
+mu_nat_gender           -0.128177        -0.005405        -0.270421         0.305107         0.115645
+mu_nat_children         -0.146323        -0.004672        -0.100477         0.115645         0.420117
+
+Robust covariance matrix:
+                          mu_asc1          mu_asc2       mu_natural       mu_walking          mu_rent         sig_asc1
+mu_asc1                  1.073751         0.591510        -0.244326       7.9129e-04         0.018664        -0.518337
+mu_asc2                  0.591510         0.550401        -0.194891      -4.8773e-04         0.012145        -0.238339
+mu_natural              -0.244326        -0.194891         0.526515        -0.008852        -0.006010         0.112565
+mu_walking             7.9129e-04      -4.8773e-04        -0.008852       9.2059e-04       1.2041e-04        -0.005078
+mu_rent                  0.018664         0.012145        -0.006010       1.2041e-04         0.001056        -0.008539
+sig_asc1                -0.518337        -0.238339         0.112565        -0.005078        -0.008539         0.563930
+sig_asc2                -0.366566        -0.325296         0.364440        -0.003242        -0.006385         0.403630
+sig_natural             -0.188452        -0.135711         0.234518        -0.002015        -0.003955         0.079010
+sig_walking             -0.003044        -0.003390       -6.181e-05       1.6919e-04       -4.387e-05        -0.001494
+sig_rent                 0.008885         0.004602         0.001009       -4.685e-05       6.3412e-04        -0.006653
+mu_nat_income           2.808e-05        2.077e-05       1.8391e-04       -3.370e-06        2.375e-06        7.396e-07
+mu_nat_age              -0.005829        -0.001626        -0.002258       -3.199e-05      -1.9295e-04         0.004320
+mu_nat_education         0.192198         0.049333        -0.391737         0.013821         0.001883        -0.215057
+mu_nat_flatsize          0.003897         0.001026        -0.010408       2.9372e-04       -4.299e-05        -0.004462
+mu_nat_garden           -0.085711        -0.092167        -0.635742         0.013340        -0.008432        -0.012691
+mu_nat_gender            0.038339         0.057918         0.358520        -0.011963         0.005494         0.074978
+mu_nat_children         -0.155554        -0.021418         0.168225        -0.009691        -0.001452         0.098598
+                         sig_asc2      sig_natural      sig_walking         sig_rent    mu_nat_income       mu_nat_age
+mu_asc1                 -0.366566        -0.188452        -0.003044         0.008885        2.808e-05        -0.005829
+mu_asc2                 -0.325296        -0.135711        -0.003390         0.004602        2.077e-05        -0.001626
+mu_natural               0.364440         0.234518       -6.181e-05         0.001009       1.8391e-04        -0.002258
+mu_walking              -0.003242        -0.002015       1.6919e-04       -4.685e-05       -3.370e-06       -3.199e-05
+mu_rent                 -0.006385        -0.003955       -4.387e-05       6.3412e-04        2.375e-06      -1.9295e-04
+sig_asc1                 0.403630         0.079010        -0.001494        -0.006653        7.396e-07         0.004320
+sig_asc2                 1.335767         0.358682         0.001778        -0.006989       1.7552e-04        3.800e-05
+sig_natural              0.358682         0.267232         0.004189      -9.2766e-04       1.1550e-04        -0.001613
+sig_walking              0.001778         0.004189       6.3447e-04       -2.838e-05        3.103e-07      -1.1310e-04
+sig_rent                -0.006989      -9.2766e-04       -2.838e-05         0.001685        2.630e-06      -2.2433e-04
+mu_nat_income          1.7552e-04       1.1550e-04        3.103e-07        2.630e-06        1.823e-07       -2.543e-06
+mu_nat_age              3.800e-05        -0.001613      -1.1310e-04      -2.2433e-04       -2.543e-06       4.9681e-04
+mu_nat_education        -0.308706        -0.125364         0.008467        -0.001669      -2.1769e-04         0.001234
+mu_nat_flatsize         -0.012916        -0.007677        8.223e-05      -1.0184e-04       -1.047e-05        7.290e-05
+mu_nat_garden           -0.459417        -0.319362         0.001044        -0.010874      -5.7592e-04         0.006945
+mu_nat_gender            0.341345         0.210849        -0.004005         0.007787       3.7250e-04        -0.003068
+mu_nat_children          0.011504         0.072804        -0.004473         0.001239       1.6906e-04         0.003472
+                 mu_nat_education  mu_nat_flatsize    mu_nat_garden    mu_nat_gender  mu_nat_children
+mu_asc1                  0.192198         0.003897        -0.085711         0.038339        -0.155554
+mu_asc2                  0.049333         0.001026        -0.092167         0.057918        -0.021418
+mu_natural              -0.391737        -0.010408        -0.635742         0.358520         0.168225
+mu_walking               0.013821       2.9372e-04         0.013340        -0.011963        -0.009691
+mu_rent                  0.001883       -4.299e-05        -0.008432         0.005494        -0.001452
+sig_asc1                -0.215057        -0.004462        -0.012691         0.074978         0.098598
+sig_asc2                -0.308706        -0.012916        -0.459417         0.341345         0.011504
+sig_natural             -0.125364        -0.007677        -0.319362         0.210849         0.072804
+sig_walking              0.008467        8.223e-05         0.001044        -0.004005        -0.004473
+sig_rent                -0.001669      -1.0184e-04        -0.010874         0.007787         0.001239
+mu_nat_income         -2.1769e-04       -1.047e-05      -5.7592e-04       3.7250e-04       1.6906e-04
+mu_nat_age               0.001234        7.290e-05         0.006945        -0.003068         0.003472
+mu_nat_education         0.899225         0.020274         0.757526        -0.652670        -0.587414
+mu_nat_flatsize          0.020274       8.0039e-04         0.032279        -0.025131        -0.016008
+mu_nat_garden            0.757526         0.032279         1.967626        -1.279298        -0.604233
+mu_nat_gender           -0.652670        -0.025131        -1.279298         0.985726         0.532907
+mu_nat_children         -0.587414        -0.016008        -0.604233         0.532907         0.713672
+
+Classical correlation matrix:
+                          mu_asc1          mu_asc2       mu_natural       mu_walking          mu_rent         sig_asc1
+mu_asc1                  1.000000         0.501845         -0.29640          0.08302         0.440723         -0.58702
+mu_asc2                  0.501845         1.000000         -0.31969          0.09499         0.414990         -0.23849
+mu_natural              -0.296398        -0.319694          1.00000         -0.27918        -0.248890          0.14658
+mu_walking               0.083016         0.094990         -0.27918          1.00000         0.174440         -0.19713
+mu_rent                  0.440723         0.414990         -0.24889          0.17444         1.000000         -0.24116
+sig_asc1                -0.587019        -0.238494          0.14658         -0.19713        -0.241160          1.00000
+sig_asc2                -0.196928        -0.445499          0.28131         -0.11730        -0.170901          0.25354
+sig_natural             -0.338936        -0.307883          0.48605         -0.23809        -0.258529          0.16673
+sig_walking             -0.132656        -0.172199          0.15736         -0.66287        -0.155065          0.10896
+sig_rent                 0.181704         0.125207         -0.01008         -0.02724         0.457820         -0.14094
+mu_nat_income            0.054105         0.017171          0.35024         -0.07530         0.057957         -0.04331
+mu_nat_age              -0.167871        -0.035895         -0.14229          0.03996        -0.089817          0.13257
+mu_nat_education         0.083509         0.008516         -0.45876          0.13002         0.033660         -0.11421
+mu_nat_flatsize          0.083414         0.035953         -0.11408          0.10730         0.002591         -0.09253
+mu_nat_garden           -0.009590        -0.038693         -0.49110          0.10052        -0.065711          0.01282
+mu_nat_gender            0.037127         0.018387          0.06574         -0.16058         0.070678          0.03397
+mu_nat_children         -0.087813         0.013984         -0.10963         -0.06355        -0.024318          0.05894
+                         sig_asc2      sig_natural      sig_walking         sig_rent    mu_nat_income       mu_nat_age
+mu_asc1                  -0.19693        -0.338936         -0.13266         0.181704          0.05410        -0.167871
+mu_asc2                  -0.44550        -0.307883         -0.17220         0.125207          0.01717        -0.035895
+mu_natural                0.28131         0.486051          0.15736        -0.010081          0.35024        -0.142288
+mu_walking               -0.11730        -0.238086         -0.66287        -0.027236         -0.07530         0.039965
+mu_rent                  -0.17090        -0.258529         -0.15506         0.457820          0.05796        -0.089817
+sig_asc1                  0.25354         0.166734          0.10896        -0.140935         -0.04331         0.132571
+sig_asc2                  1.00000         0.370906          0.09604        -0.120320          0.14272         0.020876
+sig_natural               0.37091         1.000000          0.30096        -0.067497          0.24946        -0.122354
+sig_walking               0.09604         0.300957          1.00000        -0.015430          0.02460        -0.073051
+sig_rent                 -0.12032        -0.067497         -0.01543         1.000000          0.05285        -0.115160
+mu_nat_income             0.14272         0.249458          0.02460         0.052850          1.00000        -0.131973
+mu_nat_age                0.02088        -0.122354         -0.07305        -0.115160         -0.13197         1.000000
+mu_nat_education         -0.11629        -0.118103          0.15101        -0.013503         -0.29798         0.134755
+mu_nat_flatsize          -0.14162        -0.278394          0.04596        -0.021414         -0.69928        -0.008796
+mu_nat_garden            -0.10654        -0.174961         -0.01535        -0.090577         -0.78088         0.117456
+mu_nat_gender             0.10524         0.150043         -0.03623         0.104615          0.54569        -0.021836
+mu_nat_children          -0.06927        -0.003219         -0.05369        -0.007449          0.20191         0.230387
+                 mu_nat_education  mu_nat_flatsize    mu_nat_garden    mu_nat_gender  mu_nat_children
+mu_asc1                  0.083509         0.083414        -0.009590          0.03713        -0.087813
+mu_asc2                  0.008516         0.035953        -0.038693          0.01839         0.013984
+mu_natural              -0.458761        -0.114078        -0.491098          0.06574        -0.109629
+mu_walking               0.130022         0.107298         0.100520         -0.16058        -0.063547
+mu_rent                  0.033660         0.002591        -0.065711          0.07068        -0.024318
+sig_asc1                -0.114209        -0.092529         0.012823          0.03397         0.058944
+sig_asc2                -0.116294        -0.141615        -0.106545          0.10524        -0.069273
+sig_natural             -0.118103        -0.278394        -0.174961          0.15004        -0.003219
+sig_walking              0.151011         0.045960        -0.015349         -0.03623        -0.053691
+sig_rent                -0.013503        -0.021414        -0.090577          0.10462        -0.007449
+mu_nat_income           -0.297978        -0.699283        -0.780875          0.54569         0.201913
+mu_nat_age               0.134755        -0.008796         0.117456         -0.02184         0.230387
+mu_nat_education         1.000000         0.443512         0.351588         -0.38276        -0.372359
+mu_nat_flatsize          0.443512         1.000000         0.511537         -0.61374        -0.452047
+mu_nat_garden            0.351588         0.511537         1.000000         -0.67491        -0.213703
+mu_nat_gender           -0.382755        -0.613744        -0.674907          1.00000         0.323010
+mu_nat_children         -0.372359        -0.452047        -0.213703          0.32301         1.000000
+
+Robust correlation matrix:
+                          mu_asc1          mu_asc2       mu_natural       mu_walking          mu_rent         sig_asc1
+mu_asc1                   1.00000          0.76943        -0.324947          0.02517          0.55417        -0.666113
+mu_asc2                   0.76943          1.00000        -0.362032         -0.02167          0.50366        -0.427803
+mu_natural               -0.32495         -0.36203         1.000000         -0.40209         -0.25482         0.206579
+mu_walking                0.02517         -0.02167        -0.402090          1.00000          0.12210        -0.222851
+mu_rent                   0.55417          0.50366        -0.254825          0.12210          1.00000        -0.349844
+sig_asc1                 -0.66611         -0.42780         0.206579         -0.22285         -0.34984         1.000000
+sig_asc2                 -0.30608         -0.37938         0.434566         -0.09244         -0.16997         0.465056
+sig_natural              -0.35181         -0.35386         0.625211         -0.12845         -0.23537         0.203528
+sig_walking              -0.11662         -0.18140        -0.003382          0.22137         -0.05358        -0.079007
+sig_rent                  0.20891          0.15115         0.033867         -0.03762          0.47535        -0.215863
+mu_nat_income             0.06347          0.06559         0.593665         -0.26016          0.17117         0.002307
+mu_nat_age               -0.25238         -0.09834        -0.139595         -0.04730         -0.26634         0.258108
+mu_nat_education          0.19560          0.07012        -0.569318          0.48037          0.06108        -0.302000
+mu_nat_flatsize           0.13293          0.04888        -0.507005          0.34218         -0.04676        -0.210005
+mu_nat_garden            -0.05897         -0.08857        -0.624603          0.31343         -0.18495        -0.012048
+mu_nat_gender             0.03727          0.07863         0.497657         -0.39714          0.17027         0.100564
+mu_nat_children          -0.17770         -0.03417         0.274433         -0.37806         -0.05290         0.155420
+                         sig_asc2      sig_natural      sig_walking         sig_rent    mu_nat_income       mu_nat_age
+mu_asc1                 -0.306080         -0.35181        -0.116615          0.20891         0.063466        -0.252380
+mu_asc2                 -0.379379         -0.35386        -0.181402          0.15115         0.065589        -0.098341
+mu_natural               0.434566          0.62521        -0.003382          0.03387         0.593665        -0.139595
+mu_walking              -0.092440         -0.12845         0.221374         -0.03762        -0.260159        -0.047297
+mu_rent                 -0.169973         -0.23537        -0.053581          0.47535         0.171171        -0.266339
+sig_asc1                 0.465056          0.20353        -0.079007         -0.21586         0.002307         0.258108
+sig_asc2                 1.000000          0.60034         0.061078         -0.14733         0.355718         0.001475
+sig_natural              0.600344          1.00000         0.321721         -0.04372         0.523330        -0.140003
+sig_walking              0.061078          0.32172         1.000000         -0.02745         0.028855        -0.201453
+sig_rent                -0.147330         -0.04372        -0.027452          1.00000         0.150111        -0.245211
+mu_nat_income            0.355718          0.52333         0.028855          0.15011         1.000000        -0.267254
+mu_nat_age               0.001475         -0.14000        -0.201453         -0.24521        -0.267254         1.000000
+mu_nat_education        -0.281673         -0.25574         0.354459         -0.04289        -0.537700         0.058365
+mu_nat_flatsize         -0.395027         -0.52494         0.115391         -0.08771        -0.866697         0.115604
+mu_nat_garden           -0.283381         -0.44042         0.029534         -0.18888        -0.961674         0.222133
+mu_nat_gender            0.297475          0.41082        -0.160165          0.19109         0.878804        -0.138616
+mu_nat_children          0.011783          0.16671        -0.210221          0.03572         0.468737         0.184365
+                 mu_nat_education  mu_nat_flatsize    mu_nat_garden    mu_nat_gender  mu_nat_children
+mu_asc1                   0.19560          0.13293         -0.05897          0.03727         -0.17770
+mu_asc2                   0.07012          0.04888         -0.08857          0.07863         -0.03417
+mu_natural               -0.56932         -0.50700         -0.62460          0.49766          0.27443
+mu_walking                0.48037          0.34218          0.31343         -0.39714         -0.37806
+mu_rent                   0.06108         -0.04676         -0.18495          0.17027         -0.05290
+sig_asc1                 -0.30200         -0.21001         -0.01205          0.10056          0.15542
+sig_asc2                 -0.28167         -0.39503         -0.28338          0.29748          0.01178
+sig_natural              -0.25574         -0.52494         -0.44042          0.41082          0.16671
+sig_walking               0.35446          0.11539          0.02953         -0.16016         -0.21022
+sig_rent                 -0.04289         -0.08771         -0.18888          0.19109          0.03572
+mu_nat_income            -0.53770         -0.86670         -0.96167          0.87880          0.46874
+mu_nat_age                0.05836          0.11560          0.22213         -0.13862          0.18436
+mu_nat_education          1.00000          0.75571          0.56950         -0.69324         -0.73326
+mu_nat_flatsize           0.75571          1.00000          0.81340         -0.89470         -0.66979
+mu_nat_garden             0.56950          0.81340          1.00000         -0.91859         -0.50990
+mu_nat_gender            -0.69324         -0.89470         -0.91859          1.00000          0.63537
+mu_nat_children          -0.73326         -0.66979         -0.50990          0.63537          1.00000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+     ID Avg prob per choice
+  15899           0.1639778
+  15016           0.2009151
+  17236           0.2018546
+  16852           0.2033861
+  16291           0.2034717
+  15701           0.2040330
+ 204500           0.2046311
+   2210           0.2053266
+  16518           0.2056837
+ 355900           0.2077780
+  13293           0.2078549
+  12959           0.2081132
+   4787           0.2083016
+   3702           0.2089449
+  14810           0.2101808
+  12506           0.2112839
+  19591           0.2114768
+   3057           0.2135466
+  14555           0.2136597
+  16316           0.2142165
+
+Changes in parameter estimates from starting values:
+                     Initial    Estimate  Difference
+mu_asc1              -10.000  -17.016731   -7.016731
+mu_asc2              -10.000  -17.877325   -7.877325
+mu_natural            20.000   21.394100    1.394100
+mu_walking            -2.000   -2.626628   -0.626628
+mu_rent               -2.000   -2.755817   -0.755817
+sig_asc1               5.000   20.467800   15.467800
+sig_asc2               5.000   21.882888   16.882888
+sig_natural           10.000   16.037020    6.037020
+sig_walking            5.000    1.659526   -3.340474
+sig_rent               2.000    1.285662   -0.714338
+mu_nat_income          0.000  6.7945e-04  6.7945e-04
+mu_nat_age             0.000   -0.014202   -0.014202
+mu_nat_education       0.000    1.615141    1.615141
+mu_nat_flatsize        0.000    0.007939    0.007939
+mu_nat_garden          0.000   -0.922048   -0.922048
+mu_nat_gender          0.000    2.880150    2.880150
+mu_nat_children        0.000   -4.387687   -4.387687
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                             
+modelName              "MXL_full_int"                    
+modelDescr             "MXL_full_int"                    
+indivID                "id"                              
+mixing                 "TRUE"                            
+HB                     "FALSE"                           
+nCores                 "31"                              
+outputDirectory        "Estimation_results/interactions/"
+debug                  "FALSE"                           
+workInLogs             "FALSE"                           
+seed                   "13"                              
+noValidation           "FALSE"                           
+noDiagnostics          "FALSE"                           
+calculateLLC           "TRUE"                            
+panelData              "TRUE"                            
+analyticGrad           "TRUE"                            
+analyticGrad_manualSet "FALSE"                           
+
+Hessian routines attempted
+--------------
+numerical second derivative of LL (using numDeriv)
+
+Scaling in estimation
+--------------
+                        Value
+mu_asc1          1.701655e+01
+mu_asc2          1.787718e+01
+mu_natural       2.139539e+01
+mu_walking       2.626278e+00
+mu_rent          2.755956e+00
+sig_asc1         2.046851e+01
+sig_asc2         2.188296e+01
+sig_natural      1.603625e+01
+sig_walking      1.659636e+00
+sig_rent         1.285696e+00
+mu_nat_income    6.794586e-04
+mu_nat_age       1.420175e-02
+mu_nat_education 1.615139e+00
+mu_nat_flatsize  7.939178e-03
+mu_nat_garden    9.220458e-01
+mu_nat_gender    2.880159e+00
+mu_nat_children  4.387652e+00
+
+Scaling used in computing Hessian
+--------------
+                        Value
+mu_asc1          1.701673e+01
+mu_asc2          1.787733e+01
+mu_natural       2.139410e+01
+mu_walking       2.626628e+00
+mu_rent          2.755817e+00
+sig_asc1         2.046780e+01
+sig_asc2         2.188289e+01
+sig_natural      1.603702e+01
+sig_walking      1.659526e+00
+sig_rent         1.285662e+00
+mu_nat_income    6.794548e-04
+mu_nat_age       1.420175e-02
+mu_nat_education 1.615141e+00
+mu_nat_flatsize  7.939172e-03
+mu_nat_garden    9.220481e-01
+mu_nat_gender    2.880150e+00
+mu_nat_children  4.387687e+00
+
+
+apollo_randCoeff
+----------------
+function(apollo_beta, apollo_inputs){
+  randcoeff = list()
+
+  randcoeff[["b_mu_asc1"]] = mu_asc1 + sig_asc1 * draws_asc1
+  randcoeff[["b_mu_asc2"]] = mu_asc2 + sig_asc2 * draws_asc2
+  randcoeff[["b_mu_natural"]] = mu_natural + sig_natural * draws_natural
+  randcoeff[["b_mu_walking"]] = mu_walking + sig_walking * draws_walking
+  randcoeff[["b_mu_rent"]] = -exp(mu_rent + sig_rent * draws_rent)
+
+  return(randcoeff)
+}
+<bytecode: 0x55c85b040ac0>
+
+
+apollo_probabilities
+--------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+  
+  ### Function initialisation: do not change the following three commands
+  ### Attach inputs and detach after function exit
+  apollo_attach(apollo_beta, apollo_inputs)
+  on.exit(apollo_detach(apollo_beta, apollo_inputs))
+  
+  ### Create list of probabilities P
+  P = list()
+  
+  ### List of utilities (later integrated in mnl_settings below) as defined in the equation in the paper
+  V = list()
+  V[['alt1']] = -(b_mu_rent)* (b_mu_asc1 + b_mu_natural * Naturnähe_1 + b_mu_walking * Erreichbarkeit_1 - Miete_1 +
+                               mu_nat_income * Income_mean * Naturnähe_1 + mu_nat_age * Age_mean* Naturnähe_1 +
+                               mu_nat_education * education * Naturnähe_1 + mu_nat_garden*garden*Naturnähe_1 +
+                               mu_nat_flatsize * FlatSize_mean * Naturnähe_1 + mu_nat_children * KidsDummy * Naturnähe_1 +
+                               mu_nat_gender * gender_female * Naturnähe_1)
+  
+  V[['alt2']] = -(b_mu_rent)* (b_mu_asc2 + b_mu_natural * Naturnähe_2 + b_mu_walking * Erreichbarkeit_2 - Miete_2 +
+                               mu_nat_income * Income_mean * Naturnähe_2 + mu_nat_age * Age_mean* Naturnähe_2+
+                               mu_nat_education * education * Naturnähe_2 + mu_nat_garden*garden*Naturnähe_2 +
+                               mu_nat_flatsize * FlatSize_mean * Naturnähe_2 + mu_nat_children * KidsDummy * Naturnähe_2 +
+                               mu_nat_gender * gender_female * Naturnähe_2)
+  
+  V[['alt3']] = -(b_mu_rent)* (b_mu_natural * Naturnähe_3 + b_mu_walking * Erreichbarkeit_3 - Miete_3 +
+                               mu_nat_income * Income_mean * Naturnähe_3 + mu_nat_age * Age_mean* Naturnähe_3 +
+                               mu_nat_education * education * Naturnähe_3 + mu_nat_garden*garden*Naturnähe_3 +
+                               mu_nat_flatsize * FlatSize_mean * Naturnähe_3 + mu_nat_children * KidsDummy * Naturnähe_3 +
+                               mu_nat_gender * gender_female * Naturnähe_3)
+  
+  
+  ### Define settings for MNL model component
+  mnl_settings = list(
+    alternatives  = c(alt1=1, alt2=2, alt3=3),
+    avail         = 1, # all alternatives are available in every choice
+    choiceVar     = choice,
+    V             = V#,  # tell function to use list vector defined above
+    
+  )
+  
+  ### Compute probabilities using MNL model
+  P[['model']] = apollo_mnl(mnl_settings, functionality)
+  
+  ### Take product across observation for same individual
+  P = apollo_panelProd(P, apollo_inputs, functionality)
+  
+  ### Average across inter-individual draws - nur bei Mixed Logit!
+  P = apollo_avgInterDraws(P, apollo_inputs, functionality)
+  
+  ### Prepare and return outputs of function
+  P = apollo_prepareProb(P, apollo_inputs, functionality)
+  return(P)
+}
+<bytecode: 0x55c8ec94f678>

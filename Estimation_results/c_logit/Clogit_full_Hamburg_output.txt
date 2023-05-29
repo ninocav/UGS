@@ -1,0 +1,206 @@
+Model run by idivnc71qaxa using Apollo 0.2.8 on R 4.2.2 for Windows.
+www.ApolloChoiceModelling.com
+
+Model name                                  : Clogit_full_Hamburg
+Model description                           : ClogitWTP_full_ Hamburg
+Model run at                                : 2023-04-19 14:03:50
+Estimation method                           : bfgs
+Model diagnosis                             : successful convergence 
+Number of individuals                       : 883
+Number of rows in database                  : 8803
+Number of modelled outcomes                 : 8803
+
+Number of cores used                        :  1 
+Model without mixing
+
+LL(start)                                   : -7222.23
+LL at equal shares, LL(0)                   : -9671.08
+LL at observed shares, LL(C)                : -7574.6
+LL(final)                                   : -6197.31
+Rho-squared vs equal shares                  :  0.3592 
+Adj.Rho-squared vs equal shares              :  0.3587 
+Rho-squared vs observed shares               :  0.1818 
+Adj.Rho-squared vs observed shares           :  0.1812 
+AIC                                         :  12404.62 
+BIC                                         :  12440.03 
+
+Estimated parameters                        :  5
+Time taken (hh:mm:ss)                       :  00:00:8.6 
+     pre-estimation                         :  00:00:5.92 
+     estimation                             :  00:00:1.82 
+     post-estimation                        :  00:00:0.86 
+Iterations                                  :  26  
+Min abs eigenvalue of Hessian               :  0.019691 
+
+Unconstrained optimisation.
+
+These outputs have had the scaling used in estimation applied to them.
+Estimates:
+              Estimate        s.e.   t.rat.(0)    Rob.s.e. Rob.t.rat.(0)
+mu_asc1      -59.57591    4.968710      -11.99    9.894172        -6.021
+mu_asc2      -57.24863    4.844168      -11.82    9.543120        -5.999
+mu_natural    32.37011    2.429301       13.32    4.865528         6.653
+mu_walking    -1.21451    0.116573      -10.42    0.315536        -3.849
+mu_rent       -0.01852    0.001233      -15.02    0.002516        -7.359
+
+
+Overview of choices for MNL model component :
+                                    alt1    alt2    alt3
+Times available                  8803.00 8803.00 8803.00
+Times chosen                     1363.00 1530.00 5910.00
+Percentage chosen overall          15.48   17.38   67.14
+Percentage chosen when available   15.48   17.38   67.14
+
+
+Classical covariance matrix:
+               mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent
+mu_asc1      24.688079   21.684230  -10.696920     0.29859   -0.005636
+mu_asc2      21.684230   23.465967  -10.509294     0.28580   -0.005481
+mu_natural  -10.696920  -10.509294    5.901503    -0.18767    0.002812
+mu_walking    0.298588    0.285798   -0.187666     0.01359  -9.635e-05
+mu_rent      -0.005636   -0.005481    0.002812  -9.635e-05   1.519e-06
+
+Robust covariance matrix:
+               mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent
+mu_asc1       97.89465    91.00567   -42.48071     0.53533    -0.02333
+mu_asc2       91.00567    91.07114   -41.43561     0.51784    -0.02229
+mu_natural   -42.48071   -41.43561    23.67336    -0.70106     0.01161
+mu_walking     0.53533     0.51784    -0.70106     0.09956 -2.9991e-04
+mu_rent       -0.02333    -0.02229     0.01161 -2.9991e-04   6.330e-06
+
+Classical correlation matrix:
+               mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent
+mu_asc1         1.0000      0.9009     -0.8862      0.5155     -0.9203
+mu_asc2         0.9009      1.0000     -0.8930      0.5061     -0.9180
+mu_natural     -0.8862     -0.8930      1.0000     -0.6627      0.9392
+mu_walking      0.5155      0.5061     -0.6627      1.0000     -0.6706
+mu_rent        -0.9203     -0.9180      0.9392     -0.6706      1.0000
+
+Robust correlation matrix:
+               mu_asc1     mu_asc2  mu_natural  mu_walking     mu_rent
+mu_asc1         1.0000      0.9638     -0.8824      0.1715     -0.9371
+mu_asc2         0.9638      1.0000     -0.8924      0.1720     -0.9286
+mu_natural     -0.8824     -0.8924      1.0000     -0.4566      0.9487
+mu_walking      0.1715      0.1720     -0.4566      1.0000     -0.3778
+mu_rent        -0.9371     -0.9286      0.9487     -0.3778      1.0000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+     ID Avg prob per choice
+  12720          0.01918834
+  15701          0.02555841
+  15718          0.04087929
+   1500          0.04577720
+  14127          0.07061289
+   2393          0.07311871
+  16088          0.07488467
+  15507          0.07535457
+   1111          0.08204989
+  16864          0.08311203
+  15323          0.08468289
+  15947          0.09653570
+ 222500          0.09707119
+  10895          0.10659529
+ 234800          0.11004479
+  11006          0.11880368
+ 223400          0.11939135
+  17084          0.12148672
+ 306700          0.12179615
+  13260          0.12193984
+
+Changes in parameter estimates from starting values:
+               Initial    Estimate  Difference
+mu_asc1      -10.00000   -59.57591   -49.57591
+mu_asc2      -10.00000   -57.24863   -47.24863
+mu_natural    10.00000    32.37011    22.37011
+mu_walking    -2.00000    -1.21451     0.78549
+mu_rent       -0.05000    -0.01852     0.03148
+
+Settings and functions used in model definition:
+
+apollo_control
+--------------
+                       Value                        
+modelName              "Clogit_full_Hamburg"        
+modelDescr             "ClogitWTP_full_ Hamburg"    
+indivID                "id"                         
+mixing                 "FALSE"                      
+HB                     "FALSE"                      
+nCores                 "1"                          
+outputDirectory        "Estimation_results/c_logit/"
+debug                  "FALSE"                      
+workInLogs             "FALSE"                      
+seed                   "13"                         
+noValidation           "FALSE"                      
+noDiagnostics          "FALSE"                      
+calculateLLC           "TRUE"                       
+panelData              "TRUE"                       
+analyticGrad           "TRUE"                       
+analyticGrad_manualSet "FALSE"                      
+
+Hessian routines attempted
+--------------
+numerical jacobian of LL analytical gradient
+
+Scaling in estimation
+--------------
+                 Value
+mu_asc1    59.57289426
+mu_asc2    57.24958950
+mu_natural 32.37135620
+mu_walking  1.21451793
+mu_rent     0.01851535
+
+Scaling used in computing Hessian
+--------------
+                 Value
+mu_asc1    59.57590851
+mu_asc2    57.24862977
+mu_natural 32.37010561
+mu_walking  1.21451493
+mu_rent     0.01851539
+
+
+apollo_probabilities
+--------------------
+function(apollo_beta, apollo_inputs, functionality="estimate"){
+    
+    ### Function initialisation: do not change the following three commands
+    ### Attach inputs and detach after function exit
+    apollo_attach(apollo_beta, apollo_inputs)
+    on.exit(apollo_detach(apollo_beta, apollo_inputs))
+    
+    ### Create list of probabilities P
+    P = list()
+    
+    ### List of utilities (later integrated in mnl_settings below) as defined in the equation in the paper
+    V = list()
+    V[['alt1']] = -(mu_rent)* (mu_asc1 + mu_natural * Naturnähe_1 + mu_walking * Erreichbarkeit_1 - Miete_1)
+    
+    V[['alt2']] = -(mu_rent)* (mu_asc2 + mu_natural * Naturnähe_2 + mu_walking * Erreichbarkeit_2 - Miete_2)
+    
+    V[['alt3']] = -(mu_rent)* (mu_natural * Naturnähe_3 + mu_walking * Erreichbarkeit_3 - Miete_3)
+    
+    
+    ### Define settings for MNL model component
+    mnl_settings = list(
+      alternatives  = c(alt1=1, alt2=2, alt3=3),
+      avail         = 1, # all alternatives are available in every choice
+      choiceVar     = choice,
+      V             = V#,  # tell function to use list vector defined above
+      
+    )
+    
+    ### Compute probabilities using MNL model
+    P[['model']] = apollo_mnl(mnl_settings, functionality)
+    
+    ### Take product across observation for same individual
+    P = apollo_panelProd(P, apollo_inputs, functionality)
+    
+    ### Average across inter-individual draws - nur bei Mixed Logit!
+    #P = apollo_avgInterDraws(P, apollo_inputs, functionality)
+    
+    ### Prepare and return outputs of function
+    P = apollo_prepareProb(P, apollo_inputs, functionality)
+    return(P)
+  }
+<bytecode: 0x000001d9f0d8d2c0>
