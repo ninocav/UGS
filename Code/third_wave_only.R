@@ -76,7 +76,7 @@ ggplot(data=wtp_cities_melted[1:28, ], aes(x=city_names, y=abs(city_estimates), 
   xlab("City") +
   scale_x_discrete(guide = guide_axis(angle = 45)) +
   scale_fill_brewer(palette = "Set2", labels = c("Respondi", "IMUG"), name="Sample") +
-  theme(legend.position = c(0.9, 0.8))
+  theme(legend.position = c(0.9, 0.85))
 
 ggsave("Figures/wtp_cities_ci_compare.png", dpi = "print",  width = 7, height = 5)
 

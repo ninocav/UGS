@@ -34,7 +34,7 @@ ggplot(data=mxl_melt_info, aes(x=Coefficent, y=abs(value), fill=variable)) +
   xlab("Coefficient") +
   scale_x_discrete(guide = guide_axis(angle = 45)) +
   scale_fill_brewer(palette = "Set2", labels = c("Always Info", "Optional Info", "No Info", "Respondi"), name="Treatment") +
-  theme(legend.position = c(0.9, 0.85)) 
+  theme(legend.position = c(0.9, 0.8)) 
 ggsave("Figures/info_treatment.png", dpi = "print",  width = 7, height = 5)
 
 #### Test distribution of treatments among cities ####
